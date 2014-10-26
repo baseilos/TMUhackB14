@@ -15,3 +15,9 @@
 /log/*.log
 /tmp
 *~
+
+# deployment files in ./platforms/
+/platforms
+
+# we could use this one later, maybe
+/plugins
