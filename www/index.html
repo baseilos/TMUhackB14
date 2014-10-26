@@ -47,7 +47,7 @@
 
 
         <div class="container">
-          <div class="text-center">
+          <div class="text-center row">
             <h1><span class="label label-default"><b>Congratulations</b>, you have spent <b>230.34 EUR</b> less this week</span></h1>
           </div>
 
@@ -65,19 +65,21 @@
              		var options = {
             		 // title: 'Your financial status',
                     legend: 'none',
+                    colors: ['green', 'red'],
             		  backgroundColor: 'transparent',
         	           pieHole:0.3,
                     width: '100%',
-                    height: '100%'
+                    height: '100%',
+                    chartArea:{width:"100%"}
          		};
 
 		      var chart = new google.visualization.PieChart(document.getElementById('piechart'));
 		      chart.draw(data, options);
 	      }
 	    </script>
-          <div id="piechart" style="width: 100%; height: 70%; display:block; margin: 0px auto;"></div>
+          <div id="piechart" class="row" style="width: 100%; height: 70%; display:block; margin: 0px auto;"></div>
 
-          <div class="text-center">
+          <div class="text-center row">
             <h1><span class="label label-default">Save to spend <b> 23 EUR </b> </span></h1>
           </div>
 
